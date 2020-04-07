@@ -1685,11 +1685,12 @@ namespace Sdl.MultiSelectComboBox.Themes.Generic
                 SetValue(IsEditModePropertyKey, false);
             }
 
-            if (_previousSelectedValue != null && SelectedItems != null && SelectedItems.Count == 0)
+            // Unwanted behavior - cannot clear selection
+            //if (_previousSelectedValue != null && SelectedItems != null && SelectedItems.Count == 0)
 
-            {
-                RestorePreviousSelection();
-            }
+            //{
+            //    RestorePreviousSelection();
+            //}
         }
 
 
