@@ -1182,7 +1182,7 @@ namespace Sdl.MultiSelectComboBox.Themes.Generic
 
         private void DropdownListBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if ((SelectionMode == SelectionModes.Single && SelectedItems?.Count == 0 && DisableFilterUpdateOnDropDownItemSelectionChange) || !DisableFilterUpdateOnDropDownItemSelectionChange)
+            if ((SelectionMode == SelectionModes.Single && SelectedItems.Count == 0 && DisableFilterUpdateOnDropDownItemSelectionChange) || !DisableFilterUpdateOnDropDownItemSelectionChange)
             {
                 if (e.AddedItems.Count > 0 && e.AddedItems[0] is object comboBoxItemAdded)
                 {
